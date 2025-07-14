@@ -1,0 +1,19 @@
+# 开发环境配置
+
+# 继承默认配置
+extends: "default.yaml"
+
+# 覆盖特定配置
+system:
+  debug: true
+
+api:
+  host: "127.0.0.1"
+  port: 8000
+
+logging:
+  level: "DEBUG"
+  file: "logs/dev.log"
+
+database:
+  path: "data/databases/dev_documents.db"

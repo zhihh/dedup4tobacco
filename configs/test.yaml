@@ -1,0 +1,20 @@
+# 测试环境配置
+
+# 继承默认配置
+extends: "default.yaml"
+
+# 覆盖特定配置
+system:
+  debug: true
+
+database:
+  path: "data/databases/test_documents.db"
+
+logging:
+  level: "DEBUG"
+  file: "logs/test.log"
+
+# 测试专用配置
+test:
+  sample_documents: "data/test_documents/"
+  output_dir: "tests/output/"
